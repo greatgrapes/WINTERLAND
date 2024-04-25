@@ -7,18 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2A399A2BDA497B0071EEE4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4E2A39992BDA497B0071EEE4 /* Alamofire */; };
+		4E2A399D2BDA49880071EEE4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4E2A399C2BDA49880071EEE4 /* SnapKit */; };
+		4E2A39A02BDA49950071EEE4 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 4E2A399F2BDA49950071EEE4 /* RxBlocking */; };
+		4E2A39A22BDA49950071EEE4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 4E2A39A12BDA49950071EEE4 /* RxCocoa */; };
+		4E2A39A42BDA49950071EEE4 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 4E2A39A32BDA49950071EEE4 /* RxRelay */; };
 		4E31576B2BD8EA7500C14060 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31576A2BD8EA7500C14060 /* HomeView.swift */; };
 		4E31576D2BD8EA7E00C14060 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31576C2BD8EA7E00C14060 /* HomeViewController.swift */; };
 		4E31576F2BD8EAA700C14060 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31576E2BD8EAA700C14060 /* HomeViewModel.swift */; };
-		4E3157722BD8F12500C14060 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4E3157712BD8F12500C14060 /* SnapKit */; };
-		4E3157742BD8F12500C14060 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4E3157732BD8F12500C14060 /* SnapKit-Dynamic */; };
-		4E3157772BD8F12F00C14060 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 4E3157762BD8F12F00C14060 /* RxBlocking */; };
-		4E3157792BD8F12F00C14060 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4E3157782BD8F12F00C14060 /* RxBlocking-Dynamic */; };
-		4E31577B2BD8F12F00C14060 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 4E31577A2BD8F12F00C14060 /* RxCocoa */; };
-		4E31577D2BD8F12F00C14060 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4E31577C2BD8F12F00C14060 /* RxCocoa-Dynamic */; };
-		4E31577F2BD8F12F00C14060 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 4E31577E2BD8F12F00C14060 /* RxRelay */; };
-		4E3157822BD8F13A00C14060 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4E3157812BD8F13A00C14060 /* Alamofire */; };
-		4E3157842BD8F13A00C14060 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4E3157832BD8F13A00C14060 /* AlamofireDynamic */; };
 		4E3157862BD8F1EA00C14060 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3157852BD8F1EA00C14060 /* CalendarView.swift */; };
 		4E31578A2BD8F20A00C14060 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3157892BD8F20A00C14060 /* CalendarViewController.swift */; };
 		4E31578C2BD8F21000C14060 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31578B2BD8F21000C14060 /* SettingViewController.swift */; };
@@ -41,7 +37,23 @@
 		4E9952072BD9E23200776FCE /* WLAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9952062BD9E23200776FCE /* WLAPIManager.swift */; };
 		4E9952092BD9E2A800776FCE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9952082BD9E2A800776FCE /* Constants.swift */; };
 		4E99520B2BD9E2CE00776FCE /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E99520A2BD9E2CE00776FCE /* Params.swift */; };
+		4E9952422BDA400900776FCE /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9952412BDA400900776FCE /* CLLocationManager+Rx.swift */; };
+		4E9952442BDA402A00776FCE /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9952432BDA402A00776FCE /* RxCLLocationManagerDelegateProxy.swift */; };
+		4E9952462BDA407D00776FCE /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9952452BDA407D00776FCE /* LocationService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4E9952482BDA43F700776FCE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4E31576A2BD8EA7500C14060 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -71,6 +83,9 @@
 		4E9952062BD9E23200776FCE /* WLAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLAPIManager.swift; sourceTree = "<group>"; };
 		4E9952082BD9E2A800776FCE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4E99520A2BD9E2CE00776FCE /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
+		4E9952412BDA400900776FCE /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		4E9952432BDA402A00776FCE /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
+		4E9952452BDA407D00776FCE /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,15 +93,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E3157722BD8F12500C14060 /* SnapKit in Frameworks */,
-				4E3157822BD8F13A00C14060 /* Alamofire in Frameworks */,
-				4E3157772BD8F12F00C14060 /* RxBlocking in Frameworks */,
-				4E31577F2BD8F12F00C14060 /* RxRelay in Frameworks */,
-				4E31577B2BD8F12F00C14060 /* RxCocoa in Frameworks */,
-				4E3157742BD8F12500C14060 /* SnapKit-Dynamic in Frameworks */,
-				4E31577D2BD8F12F00C14060 /* RxCocoa-Dynamic in Frameworks */,
-				4E3157842BD8F13A00C14060 /* AlamofireDynamic in Frameworks */,
-				4E3157792BD8F12F00C14060 /* RxBlocking-Dynamic in Frameworks */,
+				4E2A39A42BDA49950071EEE4 /* RxRelay in Frameworks */,
+				4E2A399A2BDA497B0071EEE4 /* Alamofire in Frameworks */,
+				4E2A39A02BDA49950071EEE4 /* RxBlocking in Frameworks */,
+				4E2A39A22BDA49950071EEE4 /* RxCocoa in Frameworks */,
+				4E2A399D2BDA49880071EEE4 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +107,7 @@
 		4E3157932BD8F2DC00C14060 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4E9952402BDA3FFC00776FCE /* Rx */,
 				4E3157942BD8F2EF00C14060 /* UITabBarController+Extension.swift */,
 				4E3157962BD8F56600C14060 /* UIImage+Extension.swift */,
 			);
@@ -115,6 +127,7 @@
 				4E9952022BD9DF1900776FCE /* .gitignore */,
 				4E81BE1F2BD65A300073A5C0 /* myDiary */,
 				4E81BE1E2BD65A300073A5C0 /* Products */,
+				4EDBB0A82BDA455F0007E516 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				4E81BE492BD65CAE0073A5C0 /* DiaryDataService.swift */,
+				4E9952452BDA407D00776FCE /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -222,6 +236,22 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		4E9952402BDA3FFC00776FCE /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				4E9952412BDA400900776FCE /* CLLocationManager+Rx.swift */,
+				4E9952432BDA402A00776FCE /* RxCLLocationManagerDelegateProxy.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		4EDBB0A82BDA455F0007E516 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +262,7 @@
 				4E81BE192BD65A300073A5C0 /* Sources */,
 				4E81BE1A2BD65A300073A5C0 /* Frameworks */,
 				4E81BE1B2BD65A300073A5C0 /* Resources */,
+				4E9952482BDA43F700776FCE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,15 +270,11 @@
 			);
 			name = myDiary;
 			packageProductDependencies = (
-				4E3157712BD8F12500C14060 /* SnapKit */,
-				4E3157732BD8F12500C14060 /* SnapKit-Dynamic */,
-				4E3157762BD8F12F00C14060 /* RxBlocking */,
-				4E3157782BD8F12F00C14060 /* RxBlocking-Dynamic */,
-				4E31577A2BD8F12F00C14060 /* RxCocoa */,
-				4E31577C2BD8F12F00C14060 /* RxCocoa-Dynamic */,
-				4E31577E2BD8F12F00C14060 /* RxRelay */,
-				4E3157812BD8F13A00C14060 /* Alamofire */,
-				4E3157832BD8F13A00C14060 /* AlamofireDynamic */,
+				4E2A39992BDA497B0071EEE4 /* Alamofire */,
+				4E2A399C2BDA49880071EEE4 /* SnapKit */,
+				4E2A399F2BDA49950071EEE4 /* RxBlocking */,
+				4E2A39A12BDA49950071EEE4 /* RxCocoa */,
+				4E2A39A32BDA49950071EEE4 /* RxRelay */,
 			);
 			productName = myDiary;
 			productReference = 4E81BE1D2BD65A300073A5C0 /* myDiary.app */;
@@ -278,9 +305,9 @@
 			);
 			mainGroup = 4E81BE142BD65A300073A5C0;
 			packageReferences = (
-				4E3157702BD8F12500C14060 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				4E3157752BD8F12F00C14060 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				4E3157802BD8F13A00C14060 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4E2A399B2BDA49880071EEE4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				4E2A399E2BDA49950071EEE4 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 4E81BE1E2BD65A300073A5C0 /* Products */;
 			projectDirPath = "";
@@ -315,6 +342,7 @@
 				4E3157992BD8F57900C14060 /* SettingView.swift in Sources */,
 				4E3157902BD8F22000C14060 /* SettingViewModel.swift in Sources */,
 				4E81BE422BD65C740073A5C0 /* DiaryListViewController.swift in Sources */,
+				4E9952442BDA402A00776FCE /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				4E3157972BD8F56600C14060 /* UIImage+Extension.swift in Sources */,
 				4E9952072BD9E23200776FCE /* WLAPIManager.swift in Sources */,
 				4E81BE462BD65C940073A5C0 /* DiaryListViewModel.swift in Sources */,
@@ -323,8 +351,10 @@
 				4E31578E2BD8F21900C14060 /* CalendarViewModel.swift in Sources */,
 				4E3157922BD8F27B00C14060 /* MainTabBarController.swift in Sources */,
 				4E81BE3B2BD65BDE0073A5C0 /* DiaryEntry.swift in Sources */,
+				4E9952462BDA407D00776FCE /* LocationService.swift in Sources */,
 				4E3157952BD8F2EF00C14060 /* UITabBarController+Extension.swift in Sources */,
 				4E81BE3D2BD65C440073A5C0 /* DiaryListView.swift in Sources */,
+				4E9952422BDA400900776FCE /* CLLocationManager+Rx.swift in Sources */,
 				4E81BE232BD65A300073A5C0 /* SceneDelegate.swift in Sources */,
 				4E3157862BD8F1EA00C14060 /* CalendarView.swift in Sources */,
 				4E31576F2BD8EAA700C14060 /* HomeViewModel.swift in Sources */,
@@ -477,10 +507,12 @@
 				DEVELOPMENT_TEAM = 586K899ZYU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myDiary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = gg;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,10 +536,12 @@
 				DEVELOPMENT_TEAM = 586K899ZYU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myDiary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = gg;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -545,7 +579,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4E3157702BD8F12500C14060 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		4E2A399B2BDA49880071EEE4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -553,7 +587,7 @@
 				minimumVersion = 5.7.1;
 			};
 		};
-		4E3157752BD8F12F00C14060 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		4E2A399E2BDA49950071EEE4 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
@@ -572,50 +606,30 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4E3157712BD8F12500C14060 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4E3157702BD8F12500C14060 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		4E3157732BD8F12500C14060 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4E3157702BD8F12500C14060 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
-		4E3157762BD8F12F00C14060 /* RxBlocking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4E3157752BD8F12F00C14060 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
-		4E3157782BD8F12F00C14060 /* RxBlocking-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4E3157752BD8F12F00C14060 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxBlocking-Dynamic";
-		};
-		4E31577A2BD8F12F00C14060 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4E3157752BD8F12F00C14060 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		4E31577C2BD8F12F00C14060 /* RxCocoa-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4E3157752BD8F12F00C14060 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = "RxCocoa-Dynamic";
-		};
-		4E31577E2BD8F12F00C14060 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4E3157752BD8F12F00C14060 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		4E3157812BD8F13A00C14060 /* Alamofire */ = {
+		4E2A39992BDA497B0071EEE4 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4E3157802BD8F13A00C14060 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		4E3157832BD8F13A00C14060 /* AlamofireDynamic */ = {
+		4E2A399C2BDA49880071EEE4 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4E3157802BD8F13A00C14060 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
+			package = 4E2A399B2BDA49880071EEE4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		4E2A399F2BDA49950071EEE4 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E2A399E2BDA49950071EEE4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		4E2A39A12BDA49950071EEE4 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E2A399E2BDA49950071EEE4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		4E2A39A32BDA49950071EEE4 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E2A399E2BDA49950071EEE4 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
