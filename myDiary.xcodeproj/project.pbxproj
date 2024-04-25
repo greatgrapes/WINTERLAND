@@ -36,9 +36,11 @@
 		4E81BE3D2BD65C440073A5C0 /* DiaryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81BE3C2BD65C440073A5C0 /* DiaryListView.swift */; };
 		4E81BE422BD65C740073A5C0 /* DiaryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81BE412BD65C740073A5C0 /* DiaryListViewController.swift */; };
 		4E81BE462BD65C940073A5C0 /* DiaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81BE452BD65C940073A5C0 /* DiaryListViewModel.swift */; };
-		4E81BE482BD65C9A0073A5C0 /* DiaryEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81BE472BD65C9A0073A5C0 /* DiaryEntryViewModel.swift */; };
 		4E81BE4A2BD65CAE0073A5C0 /* DiaryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81BE492BD65CAE0073A5C0 /* DiaryDataService.swift */; };
 		4E9952032BD9DF1900776FCE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4E9952022BD9DF1900776FCE /* .gitignore */; };
+		4E9952072BD9E23200776FCE /* WLAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9952062BD9E23200776FCE /* WLAPIManager.swift */; };
+		4E9952092BD9E2A800776FCE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9952082BD9E2A800776FCE /* Constants.swift */; };
+		4E99520B2BD9E2CE00776FCE /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E99520A2BD9E2CE00776FCE /* Params.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,9 +66,11 @@
 		4E81BE3C2BD65C440073A5C0 /* DiaryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListView.swift; sourceTree = "<group>"; };
 		4E81BE412BD65C740073A5C0 /* DiaryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewController.swift; sourceTree = "<group>"; };
 		4E81BE452BD65C940073A5C0 /* DiaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewModel.swift; sourceTree = "<group>"; };
-		4E81BE472BD65C9A0073A5C0 /* DiaryEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryEntryViewModel.swift; sourceTree = "<group>"; };
 		4E81BE492BD65CAE0073A5C0 /* DiaryDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDataService.swift; sourceTree = "<group>"; };
 		4E9952022BD9DF1900776FCE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4E9952062BD9E23200776FCE /* WLAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLAPIManager.swift; sourceTree = "<group>"; };
+		4E9952082BD9E2A800776FCE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E99520A2BD9E2CE00776FCE /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		4E81BE1F2BD65A300073A5C0 /* myDiary */ = {
 			isa = PBXGroup;
 			children = (
+				4E9952052BD9E22400776FCE /* API */,
 				4E81BE392BD65B9F0073A5C0 /* LifeCycles */,
 				4E3157932BD8F2DC00C14060 /* Extensions */,
 				4E31579A2BD8F7F000C14060 /* WLDesign */,
@@ -171,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				4E81BE452BD65C940073A5C0 /* DiaryListViewModel.swift */,
-				4E81BE472BD65C9A0073A5C0 /* DiaryEntryViewModel.swift */,
 				4E31576E2BD8EAA700C14060 /* HomeViewModel.swift */,
 				4E31578D2BD8F21900C14060 /* CalendarViewModel.swift */,
 				4E31578F2BD8F22000C14060 /* SettingViewModel.swift */,
@@ -191,13 +195,31 @@
 		4E81BE402BD65C5B0073A5C0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4E3157912BD8F27B00C14060 /* MainTabBarController.swift */,
+				4E99520C2BD9E33400776FCE /* TabBar */,
 				4E31576C2BD8EA7E00C14060 /* HomeViewController.swift */,
 				4E81BE412BD65C740073A5C0 /* DiaryListViewController.swift */,
 				4E3157892BD8F20A00C14060 /* CalendarViewController.swift */,
 				4E31578B2BD8F21000C14060 /* SettingViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4E9952052BD9E22400776FCE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4E9952062BD9E23200776FCE /* WLAPIManager.swift */,
+				4E9952082BD9E2A800776FCE /* Constants.swift */,
+				4E99520A2BD9E2CE00776FCE /* Params.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4E99520C2BD9E33400776FCE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4E3157912BD8F27B00C14060 /* MainTabBarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,11 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E31578A2BD8F20A00C14060 /* CalendarViewController.swift in Sources */,
+				4E9952092BD9E2A800776FCE /* Constants.swift in Sources */,
+				4E99520B2BD9E2CE00776FCE /* Params.swift in Sources */,
 				4E3157992BD8F57900C14060 /* SettingView.swift in Sources */,
 				4E3157902BD8F22000C14060 /* SettingViewModel.swift in Sources */,
 				4E81BE422BD65C740073A5C0 /* DiaryListViewController.swift in Sources */,
 				4E3157972BD8F56600C14060 /* UIImage+Extension.swift in Sources */,
-				4E81BE482BD65C9A0073A5C0 /* DiaryEntryViewModel.swift in Sources */,
+				4E9952072BD9E23200776FCE /* WLAPIManager.swift in Sources */,
 				4E81BE462BD65C940073A5C0 /* DiaryListViewModel.swift in Sources */,
 				4E81BE212BD65A300073A5C0 /* AppDelegate.swift in Sources */,
 				4E31578C2BD8F21000C14060 /* SettingViewController.swift in Sources */,
