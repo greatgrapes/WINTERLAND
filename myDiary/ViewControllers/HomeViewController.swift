@@ -20,6 +20,7 @@ final class HomeViewController: UIViewController {
     
     init(locationService: LocationService) {
         self.locationService = locationService
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
