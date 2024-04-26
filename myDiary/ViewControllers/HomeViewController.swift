@@ -16,7 +16,15 @@ final class HomeViewController: UIViewController {
     let rootView: HomeView = HomeView()
     // Test
     // TODO:: LocationService 따로빼기 싱글톤이 아닌
-    let locationService = LocationService.shared
+    let locationService: LocationService
+    
+    init(locationService: LocationService) {
+        self.locationService = locationService
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func loadView() {
         view = rootView

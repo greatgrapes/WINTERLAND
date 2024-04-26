@@ -17,10 +17,10 @@ final class MainTabBarController: UITabBarController {
     
     
     private func configureViewController() {
-        let home = templatNavigationController("홈", unselectedImage: UIImage(), selectedImage: UIImage(), rootViewController: HomeViewController())
+        let home = templatNavigationController("홈", unselectedImage: UIImage(), selectedImage: UIImage(), rootViewController: HomeViewController(locationService: LocationService()))
         let diary = templatNavigationController("다이어리", unselectedImage: UIImage(), selectedImage: UIImage(), rootViewController: DiaryListViewController())
-        let calendar = templatNavigationController("캘린더", unselectedImage: UIImage(), selectedImage: UIImage(), rootViewController: HomeViewController())
-        let setting = templatNavigationController("내 정보", unselectedImage: UIImage(), selectedImage: UIImage(), rootViewController: HomeViewController())
+        let calendar = templatNavigationController("캘린더", unselectedImage: UIImage(), selectedImage: UIImage(), rootViewController: CalendarViewController())
+        let setting = templatNavigationController("내 정보", unselectedImage: UIImage(), selectedImage: UIImage(), rootViewController: SettingViewController())
         viewControllers = [home, diary, calendar, setting]
         tabBar.tintColor = .black
     }

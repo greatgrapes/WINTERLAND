@@ -9,13 +9,12 @@ import CoreLocation
 import RxSwift
 import RxCocoa
 
-class LocationService {
-    static let shared = LocationService()
-    
+final class LocationService {
+   
     private let locationManager = CLLocationManager()
     private let delegateProxy: RxCLLocationManagerDelegateProxy
     
-    private init() {
+    init() {
         delegateProxy = RxCLLocationManagerDelegateProxy(locationManager: locationManager)
         locationManager.delegate = delegateProxy
     }
