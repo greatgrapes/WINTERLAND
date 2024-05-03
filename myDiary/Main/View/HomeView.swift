@@ -20,6 +20,8 @@ final class HomeView: UIView {
         setupAutolayout()
     }
     
+    
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

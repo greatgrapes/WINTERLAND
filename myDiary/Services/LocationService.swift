@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 final class LocationService {
-   
+    
     private let locationManager = CLLocationManager()
     private let delegateProxy: RxCLLocationManagerDelegateProxy
     
@@ -29,19 +29,19 @@ final class LocationService {
     }
     
     // MARK: - CLLocationManager Methods
-        // 위치 권한 요청
-       func requestAuthorization() {
-           locationManager.requestWhenInUseAuthorization()
-       }
-       
-       // 위치 업데이트 요청
-       func startUpdatingLocation() {
-           locationManager.startUpdatingLocation()
-       }
-       
-       // 위치 업데이트 중지
-       func stopUpdatingLocation() {
-           locationManager.stopUpdatingLocation()
-       }
+    // 위치 권한 요청
+    func requestAuthorization() {
+        locationManager.requestWhenInUseAuthorization()
     }
+    
+    // 위치 업데이트 요청
+    func startUpdatingLocation() {
+        locationManager.startUpdatingLocation()
+    }
+    
+    // 위치 업데이트 중지
+    func stopUpdatingLocation() {
+        locationManager.stopUpdatingLocation()
+    }
+}
 

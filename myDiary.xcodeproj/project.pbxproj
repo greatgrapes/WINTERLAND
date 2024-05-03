@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0ABA482BE4C17100F022EC /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ABA472BE4C17100F022EC /* UIViewController+Extension.swift */; };
+		4E0ABA652BE4DD8400F022EC /* WLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0ABA642BE4DD8400F022EC /* WLConstants.swift */; };
 		4E2164612BDB3EEE003B4642 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 4E2164602BDB3EEE003B4642 /* Auth */; };
 		4E2164652BDB3EEE003B4642 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 4E2164642BDB3EEE003B4642 /* PostgREST */; };
 		4E2164672BDB3EEE003B4642 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 4E2164662BDB3EEE003B4642 /* Realtime */; };
@@ -65,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E0ABA472BE4C17100F022EC /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		4E0ABA642BE4DD8400F022EC /* WLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLConstants.swift; sourceTree = "<group>"; };
 		4E21646A2BDB40B6003B4642 /* SupabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseService.swift; sourceTree = "<group>"; };
 		4E31576A2BD8EA7500C14060 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4E31576C2BD8EA7E00C14060 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -122,11 +126,237 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E0ABA492BE4DB4300F022EC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4E99520C2BD9E33400776FCE /* TabBar */,
+				4E0ABA522BE4DBDD00F022EC /* Model */,
+				4E0ABA512BE4DBDA00F022EC /* View */,
+				4E0ABA532BE4DBE200F022EC /* ViewModel */,
+				4E0ABA542BE4DBF000F022EC /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4E0ABA4A2BE4DB4C00F022EC /* DiaryList */ = {
+			isa = PBXGroup;
+			children = (
+				4E0ABA4D2BE4DB8400F022EC /* Model */,
+				4E0ABA4E2BE4DBBA00F022EC /* View */,
+				4E0ABA502BE4DBCE00F022EC /* ViewModel */,
+				4E0ABA4F2BE4DBC500F022EC /* ViewController */,
+			);
+			path = DiaryList;
+			sourceTree = "<group>";
+		};
+		4E0ABA4B2BE4DB6E00F022EC /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				4E0ABA552BE4DC2C00F022EC /* Model */,
+				4E0ABA562BE4DC2F00F022EC /* View */,
+				4E0ABA572BE4DC3300F022EC /* ViewModel */,
+				4E0ABA582BE4DC3600F022EC /* ViewController */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		4E0ABA4C2BE4DB7900F022EC /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4E0ABA592BE4DC6000F022EC /* Model */,
+				4E0ABA5A2BE4DC6300F022EC /* View */,
+				4E0ABA5B2BE4DC6600F022EC /* ViewModel */,
+				4E0ABA5C2BE4DC6A00F022EC /* ViewController */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		4E0ABA4D2BE4DB8400F022EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E81BE3A2BD65BDE0073A5C0 /* DiaryEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E0ABA4E2BE4DBBA00F022EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E81BE3C2BD65C440073A5C0 /* DiaryListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E0ABA4F2BE4DBC500F022EC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E81BE412BD65C740073A5C0 /* DiaryListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4E0ABA502BE4DBCE00F022EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E81BE452BD65C940073A5C0 /* DiaryListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E0ABA512BE4DBDA00F022EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E31576A2BD8EA7500C14060 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E0ABA522BE4DBDD00F022EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E0ABA532BE4DBE200F022EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E31576E2BD8EAA700C14060 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E0ABA542BE4DBF000F022EC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E31576C2BD8EA7E00C14060 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4E0ABA552BE4DC2C00F022EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E0ABA562BE4DC2F00F022EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E3157852BD8F1EA00C14060 /* CalendarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E0ABA572BE4DC3300F022EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E31578D2BD8F21900C14060 /* CalendarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E0ABA582BE4DC3600F022EC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E3157892BD8F20A00C14060 /* CalendarViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4E0ABA592BE4DC6000F022EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E0ABA5A2BE4DC6300F022EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E3157982BD8F57900C14060 /* SettingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E0ABA5B2BE4DC6600F022EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E31578F2BD8F22000C14060 /* SettingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E0ABA5C2BE4DC6A00F022EC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E31578B2BD8F21000C14060 /* SettingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4E0ABA5D2BE4DC8B00F022EC /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4E0ABA5E2BE4DCB000F022EC /* Login */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4E0ABA5E2BE4DCB000F022EC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4E0ABA5F2BE4DCB400F022EC /* Model */,
+				4E0ABA622BE4DCCC00F022EC /* View */,
+				4E0ABA612BE4DCBE00F022EC /* ViewController */,
+				4E0ABA602BE4DCB900F022EC /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4E0ABA5F2BE4DCB400F022EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E0ABA602BE4DCB900F022EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4E0ABA612BE4DCBE00F022EC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4E0ABA622BE4DCCC00F022EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E0ABA632BE4DD7400F022EC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4E0ABA642BE4DD8400F022EC /* WLConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		4E3157932BD8F2DC00C14060 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				4E9952402BDA3FFC00776FCE /* Rx */,
 				4E3157942BD8F2EF00C14060 /* UITabBarController+Extension.swift */,
+				4E0ABA472BE4C17100F022EC /* UIViewController+Extension.swift */,
 				4E3157962BD8F56600C14060 /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
@@ -160,15 +390,17 @@
 		4E81BE1F2BD65A300073A5C0 /* myDiary */ = {
 			isa = PBXGroup;
 			children = (
+				4E0ABA632BE4DD7400F022EC /* Constants */,
 				4E9952052BD9E22400776FCE /* API */,
 				4E81BE392BD65B9F0073A5C0 /* LifeCycles */,
 				4E3157932BD8F2DC00C14060 /* Extensions */,
 				4E31579A2BD8F7F000C14060 /* WLDesign */,
 				4E81BE342BD65AAD0073A5C0 /* Services */,
-				4E81BE352BD65AE70073A5C0 /* Models */,
-				4E81BE372BD65B910073A5C0 /* Views */,
-				4E81BE402BD65C5B0073A5C0 /* ViewControllers */,
-				4E81BE382BD65B940073A5C0 /* ViewModels */,
+				4E0ABA5D2BE4DC8B00F022EC /* Onboarding */,
+				4E0ABA492BE4DB4300F022EC /* Main */,
+				4E0ABA4A2BE4DB4C00F022EC /* DiaryList */,
+				4E0ABA4B2BE4DB6E00F022EC /* Calendar */,
+				4E0ABA4C2BE4DB7900F022EC /* Setting */,
 				4E81BE292BD65A320073A5C0 /* Assets.xcassets */,
 				4E81BE2B2BD65A320073A5C0 /* LaunchScreen.storyboard */,
 				4E81BE2E2BD65A320073A5C0 /* Info.plist */,
@@ -186,36 +418,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		4E81BE352BD65AE70073A5C0 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				4E81BE3A2BD65BDE0073A5C0 /* DiaryEntry.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		4E81BE372BD65B910073A5C0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4E31576A2BD8EA7500C14060 /* HomeView.swift */,
-				4E81BE3C2BD65C440073A5C0 /* DiaryListView.swift */,
-				4E3157852BD8F1EA00C14060 /* CalendarView.swift */,
-				4E3157982BD8F57900C14060 /* SettingView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		4E81BE382BD65B940073A5C0 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				4E81BE452BD65C940073A5C0 /* DiaryListViewModel.swift */,
-				4E31576E2BD8EAA700C14060 /* HomeViewModel.swift */,
-				4E31578D2BD8F21900C14060 /* CalendarViewModel.swift */,
-				4E31578F2BD8F22000C14060 /* SettingViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		4E81BE392BD65B9F0073A5C0 /* LifeCycles */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,18 +425,6 @@
 				4E81BE222BD65A300073A5C0 /* SceneDelegate.swift */,
 			);
 			path = LifeCycles;
-			sourceTree = "<group>";
-		};
-		4E81BE402BD65C5B0073A5C0 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				4E99520C2BD9E33400776FCE /* TabBar */,
-				4E31576C2BD8EA7E00C14060 /* HomeViewController.swift */,
-				4E81BE412BD65C740073A5C0 /* DiaryListViewController.swift */,
-				4E3157892BD8F20A00C14060 /* CalendarViewController.swift */,
-				4E31578B2BD8F21000C14060 /* SettingViewController.swift */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		4E9952052BD9E22400776FCE /* API */ = {
@@ -364,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0ABA482BE4C17100F022EC /* UIViewController+Extension.swift in Sources */,
 				4E31578A2BD8F20A00C14060 /* CalendarViewController.swift in Sources */,
 				4E9952092BD9E2A800776FCE /* Constants.swift in Sources */,
 				4E99520B2BD9E2CE00776FCE /* Params.swift in Sources */,
@@ -383,6 +574,7 @@
 				4E9952462BDA407D00776FCE /* LocationService.swift in Sources */,
 				4E3157952BD8F2EF00C14060 /* UITabBarController+Extension.swift in Sources */,
 				4E81BE3D2BD65C440073A5C0 /* DiaryListView.swift in Sources */,
+				4E0ABA652BE4DD8400F022EC /* WLConstants.swift in Sources */,
 				4E9952422BDA400900776FCE /* CLLocationManager+Rx.swift in Sources */,
 				4E81BE232BD65A300073A5C0 /* SceneDelegate.swift in Sources */,
 				4E3157862BD8F1EA00C14060 /* CalendarView.swift in Sources */,
